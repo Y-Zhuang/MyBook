@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/shelf_srl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/shelf_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="2"
+            android:scrollbars="none"
+            android:fadeScrollbars="true"
+            android:fastScrollEnabled="true"
+            android:verticalSpacing="20dp"
+            android:horizontalSpacing="20dp">
+
+        </GridView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

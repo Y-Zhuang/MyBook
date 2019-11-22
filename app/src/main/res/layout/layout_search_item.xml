@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer_list_layout_cards">
+
+    <ImageView
+        android:id="@+id/sea_img_iv"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/sea_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/sea_img_iv"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/sea_author_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/sea_name_tv"
+        android:layout_alignLeft="@+id/sea_name_tv"/>
+
+    <TextView
+        android:id="@+id/sea_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorMoneyTv"
+        android:layout_below="@+id/sea_author_tv"
+        android:layout_alignLeft="@+id/sea_name_tv"/>
+
+</RelativeLayout>

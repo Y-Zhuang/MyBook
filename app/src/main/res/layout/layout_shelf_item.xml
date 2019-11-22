@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/shape_shelf_bg">
+
+    <ImageView
+        android:id="@+id/shelf_img"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/shelf_money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/colorMoneyTv"/>
+
+    <TextView
+        android:id="@+id/shelf_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:textColor="@color/colorShelfTvText"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:text="dkjrtghg"
+        android:singleLine="true"/>
+
+</LinearLayout>

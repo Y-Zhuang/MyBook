@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layer_list_layout_cards">
+
+    <ImageView
+        android:id="@+id/book_img_iv"
+        android:layout_width="70dp"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/book_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/book_img_iv"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/book_author_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textSize="14dp"
+        android:layout_below="@+id/book_name_tv"
+        android:layout_alignLeft="@+id/book_name_tv"/>
+
+    <TextView
+        android:id="@+id/money_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorMoneyTv"
+        android:layout_below="@+id/book_author_tv"
+        android:layout_alignLeft="@+id/book_name_tv"/>
+
+    <Button
+        android:id="@+id/delete_btn"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/book_img_iv"
+        android:background="@mipmap/ic_delete"/>
+
+</RelativeLayout>

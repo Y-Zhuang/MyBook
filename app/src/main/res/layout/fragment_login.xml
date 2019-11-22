@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/icon_riv"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_picture"
+        app:riv_oval="true">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+    <TextView
+        android:id="@+id/school_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/School"
+        android:textSize="20sp"
+        android:textColor="@color/colorSchoolText"
+        android:layout_below="@+id/icon_riv"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/name_ev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/school_tv"
+        android:drawableLeft="@mipmap/ic_name"
+        android:hint="@string/Name_Hint"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColor="@color/colorSchoolText"
+        android:textColorHint="@color/colorSchoolText"
+        android:theme="@style/LoginEditText"/>
+
+    <EditText
+        android:id="@+id/pwd_ev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/name_ev"
+        android:layout_alignRight="@+id/name_ev"
+        android:layout_below="@+id/name_ev"
+        android:drawableLeft="@mipmap/ic_pwd"
+        android:hint="@string/Pwd_Hint"
+        android:textColor="@color/colorSchoolText"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorSchoolText"
+        android:theme="@style/LoginEditText"/>
+
+    <LinearLayout
+        android:id="@+id/login_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/pwd_ev"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/student_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/student_btn_text"
+            android:textColor="@color/colorSchoolText"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_login_btn_bg"/>
+
+        <Button
+            android:id="@+id/teacher_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teacher_btn_text"
+            android:textColor="@color/colorSchoolText"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_login_btn_bg"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_alignLeft="@+id/login_ll"
+        android:layout_alignRight="@+id/login_ll">
+
+    <CheckBox
+        android:id="@+id/rem_pwd_chk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rem_pwd_chk_text"
+        android:textColor="@color/colorSchoolText"
+        android:textSize="15sp"
+        android:theme="@style/WhiteCheckBox"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/reg_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reg_tv_text"
+        android:textColor="@color/colorSchoolText"
+        android:textSize="15sp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

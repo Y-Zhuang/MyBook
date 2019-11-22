@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/reg_icon_riv"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_picture"
+        app:riv_oval="true"/>
+
+    <TextView
+        android:id="@+id/school_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/School"
+        android:textSize="20sp"
+        android:textColor="@color/colorSchoolText"
+        android:layout_below="@+id/reg_icon_riv"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/reg_name_ev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/school_tv"
+        android:drawableLeft="@mipmap/ic_name"
+        android:hint="@string/Name_Hint"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="text"
+        android:textColor="@color/colorSchoolText"
+        android:textColorHint="@color/colorSchoolText"
+        android:theme="@style/LoginEditText"/>
+
+    <EditText
+        android:id="@+id/reg_pwd_ev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/reg_name_ev"
+        android:layout_alignRight="@+id/reg_name_ev"
+        android:layout_below="@+id/reg_name_ev"
+        android:drawableLeft="@mipmap/ic_pwd"
+        android:hint="@string/Pwd_Hint"
+        android:textColor="@color/colorSchoolText"
+        android:lines="1"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorSchoolText"
+        android:theme="@style/LoginEditText"/>
+
+    <EditText
+        android:id="@+id/reg_pwd2_ev"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/reg_pwd_ev"
+        android:layout_alignRight="@+id/reg_pwd_ev"
+        android:layout_below="@+id/reg_pwd_ev"
+        android:drawableLeft="@mipmap/ic_pwd"
+        android:hint="@string/Pwd2_Hint"
+        android:textColor="@color/colorSchoolText"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorSchoolText"
+        android:theme="@style/LoginEditText"/>
+
+    <LinearLayout
+        android:id="@+id/reg_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/reg_pwd2_ev"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clear_btn_text"
+            android:textColor="@color/colorSchoolText"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/shape_login_btn_bg"/>
+
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/next_btn_text"
+            android:textColor="@color/colorSchoolText"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/shape_login_btn_bg"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/login_tv_text"
+        android:textColor="@color/colorSchoolText"
+        android:textSize="15sp"
+        android:layout_below="@+id/reg_ll"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

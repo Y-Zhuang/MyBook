@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">MyBook</string>
+    <string name="School">广西机电职业技术学院</string>
+    <string name="Name_Hint">请输入用户名</string>
+    <string name="Pwd_Hint">请输入密码</string>
+    <string name="student_btn_text">学生登录</string>
+    <string name="teacher_btn_text">教师登录</string>
+    <string name="reg_tv_text">没有账号？</string>
+    <string name="phone_tv_text">服务电话： 077112346041</string>
+    <string name="student_text">同学</string>
+    <string name="teacher_text">老师</string>
+    <string name="name_tv_text">收藏的图书</string>
+    <string name="dialog_text">数据加载中……</string>
+    <string name="Pwd2_Hint">请确认密码</string>
+    <string name="clear_btn_text">清空</string>
+    <string name="next_btn_text">下一步</string>
+    <string name="login_tv_text">已有帐号？登录……</string>
+    <string name="role_student_btn_text">学 生</string>
+    <string name="role_teacher_btn_text">教 师</string>
+    <string name="rem_pwd_chk_text">记住密码</string>
+    <string name="shelf_text">书架</string>
+    <string name="collect_text">收藏</string>
+    <string name="my_text">我</string>
+    <string name="my_display_text">查看使用本APP的用户</string>
+    <string name="my_import_text">导入用户</string>
+    <string name="imp_add_text">添加用户</string>
+    <string name="imp_cancel_text">取消</string>
+</resources>
